@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="font-awesome/css/fa-brands.css" rel="stylesheet" />
+    <link href="font-awesome/css/fa-regular.css" rel="stylesheet" />
+    <link href="font-awesome/css/fa-solid.css" rel="stylesheet" />
+    <link href="font-awesome/css/fontawesome-all.css" rel="stylesheet" />
+    <link href="font-awesome/css/fontawesome.css" rel="stylesheet" />
+
+</head>
+<body>
+    <span id="battery" class="fa">Phone Number</span>
+    <script>
+        function cb() {
+            let battery =
+                document.getElementById('battery');
+            battery.innerHTML = "&#xf244;";
+            setTimeout(function () {
+                battery.innerHTML = "&#xf243;";
+            }, 1000);
+
+            setTimeout(function () {
+                battery.innerHTML = "&#xf242;";
+            }, 2000);
+
+            setTimeout(function () {
+                battery.innerHTML = "&#xf241;";
+            }, 3000);
+
+            setTimeout(function () {
+                battery.innerHTML = "&#xf240;";
+            }, 4000);
+        }
+        cb();
+        setInterval(cb, 5000);
+    </script>
+</body>
+</html>
